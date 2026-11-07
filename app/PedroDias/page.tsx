@@ -8,7 +8,7 @@ export default function PedroDias() {
 
       <div className="max-w-3xl mx-auto mt-12">
         <h1 className="text-4xl font-bold">
-          Olá! Sou o Pedro Dias 👋
+          Olá! Sou o Pedro Dias
         </h1>
 
         <Image

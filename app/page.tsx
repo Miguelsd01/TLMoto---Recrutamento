@@ -41,7 +41,7 @@ export default function Home() {
           {/* Miguel */}
           <Card
             nome="Miguel"
-            descricao="descricao do Miguel"
+            descricao="Sou o Miguel, tenho 18 anos, sou de Portimão e estou no primeiro ano em Engenharia Informática e de Computadores no Tagus."
             link="/Miguel"
           />
           </div>

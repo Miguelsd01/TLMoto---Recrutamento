@@ -8,7 +8,7 @@ export default function Miguel() {
 
       <div className="max-w-3xl mx-auto mt-12">
         <h1 className="text-4xl font-bold">
-          Olá! Sou o Miguel 👋
+          Olá! Sou o Miguel
         </h1>
 
         <Image
@@ -25,7 +25,7 @@ export default function Miguel() {
             Sobre mim
           </h2>
           <p className="mt-3">
-            Sou o Miguel, tenho 18 anos, sou de Portimão e estou no primeiro ano em Engenharia Informática no Tagus.
+            Sou o Miguel, tenho 18 anos, sou de Portimão e estou no primeiro ano em Engenharia Informática e de Computadores no Tagus.
           </p>
         </section>
 
