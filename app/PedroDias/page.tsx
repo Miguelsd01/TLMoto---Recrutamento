@@ -1,5 +1,3 @@
-
-import Link from "next/link";
 import Image from "next/image";
 
 export default function PedroDias() {
@@ -25,7 +23,7 @@ export default function PedroDias() {
             Sobre mim
           </h2>
           <p className="mt-3">
-            Sou estudante de Engenharia Informatica de Computadores no Tagus. Tenho 20 anos e sou natural de Lisboa.
+            Sou estudante de Engenharia Informática de Computadores no Tagus. Tenho 20 anos e sou natural de Lisboa.
           </p>
         </section>
 
@@ -34,7 +32,7 @@ export default function PedroDias() {
             Hobbies e interesses
           </h2>
           <p className="mt-3">
-            Gosto de programação, música e desporto. Faco jujitsu e gosto de voleibol.
+            Gosto de programação, música e desporto. Faço jujitsu e gosto de voleibol.
           </p>
         </section>
 
@@ -43,7 +41,7 @@ export default function PedroDias() {
             Projetos
           </h2>
           <p className="mt-3">
-            Nao tenho projetos de programação, mas ja trabalhei em campos de ferias.
+            Não tenho projetos de programação, mas já trabalhei em campos de férias.
           </p>
         </section>
 
@@ -52,7 +50,7 @@ export default function PedroDias() {
             O que espero aprender
           </h2>
           <p className="mt-3">
-            Quero melhorar as minhas capacidades em programacao e aprender telemetria.
+            Quero melhorar as minhas capacidades em programacão e aprender telemetria.
           </p>
         </section>
       </div>
