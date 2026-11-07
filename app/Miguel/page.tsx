@@ -16,7 +16,8 @@ export default function Miguel() {
           alt="Fotografia do Miguel"
           width={200}
           height={200}
-          className="rounded-full object-cover mt-8 w-48 h-48"
+          unoptimized
+           className="mt-8 h-48 w-48 rounded-full object-cover border-4 border-blue-500"
         />
 
         <section className="mt-10">
@@ -24,7 +25,7 @@ export default function Miguel() {
             Sobre mim
           </h2>
           <p className="mt-3">
-            sobre mim
+            Sou o Miguel, tenho 18 anos, sou de Portimão e estou no primeiro ano em Engenharia Informática no Tagus.
           </p>
         </section>
 
@@ -33,7 +34,7 @@ export default function Miguel() {
             Hobbies e interesses
           </h2>
           <p className="mt-3">
-            hobbies e interesses
+            Gosto de tecnologia e inovação, música, aprender novas coisas, convívio e exploração de mota.
           </p>
         </section>
 
@@ -41,9 +42,14 @@ export default function Miguel() {
           <h2 className="text-2xl font-bold text-blue-400">
             Projetos
           </h2>
-          <p className="mt-3">
-            projetos
-          </p>
+          <ul className="mt-3 list-disc space-y-3 pl-6">
+            <li>
+            Quantum Trace – JunctionX Hackathon: focado na rastreabilidade e segurança da informação através de tecnologia quântica.
+            </li>
+            <li>
+            Projetos de programação – CS50: projetos desenvolvidos em C, envolvendo algoritmos, estruturas de dados, manipulação de ficheiros e gestão de memória.
+            </li>
+          </ul>
         </section>
 
         <section className="mt-8">
@@ -51,7 +57,7 @@ export default function Miguel() {
             O que espero aprender
           </h2>
           <p className="mt-3">
-            o que espero aprender
+            Espero aprender novas competências técnicas, desnvolvendo projetos práticos, trabalhar em equipa, enfrentar desafios e contactar com diferentes áreas de conhecimento.
           </p>
         </section>
 
