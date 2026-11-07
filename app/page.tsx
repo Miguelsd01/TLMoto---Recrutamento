@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Card from "./components/card";
 
 export default function Home() {
@@ -5,22 +6,36 @@ export default function Home() {
     <main className="min-h-screen bg-slate-950 text-white">
 
       {/* Apresentação */}
-      <section className="px-6 py-24 text-center">
-        <h2 className="text-4xl font-bold md:text-6xl">
-          Conhece a nossa
-          <span className="text-blue-400"> Equipa.</span>
-        </h2>
+      <section className="relative overflow-hidden px-6 py-32 text-center">
+        <Image
+          src="/banner.png"
+          alt="Mota da TLMoto em pista"
+          fill
+          priority
+          className="object-cover opacity-30"
+        />
 
-        <p className="mx-auto mt-6 max-w-2xl text-lg text-slate-400">
-          Somos recrutas a fazer uma tarefa para a TLmoto.
-        </p>
+        {/* Degradé para a imagem se fundir com o fundo da página */}
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-950/40 via-transparent to-slate-950" />
 
-        <a
-          href="#equipa"
-          className="mt-8 inline-block rounded-xl bg-blue-600 px-6 py-3 font-semibold transition-colors hover:bg-blue-500"
-        >
-          Conhecer a equipa
-        </a>
+        {/* Conteúdo por cima da imagem */}
+        <div className="relative z-10">
+          <h2 className="text-4xl font-bold md:text-6xl">
+            Conhece a nossa
+            <span className="text-blue-400"> Equipa.</span>
+          </h2>
+
+          <p className="mx-auto mt-6 max-w-2xl text-lg text-slate-300">
+            Somos recrutas a fazer uma tarefa para a TLmoto.
+          </p>
+
+          <a
+            href="#equipa"
+            className="mt-8 inline-block rounded-xl bg-blue-600 px-6 py-3 font-semibold transition-colors hover:bg-blue-500"
+          >
+            Conhecer a equipa
+          </a>
+        </div>
       </section>
 
       {/* Membros */}
@@ -29,11 +44,11 @@ export default function Home() {
           Os nossos membros
         </h2>
 
-        <div className="grid grid-cols-2 gap-6 md:grid-cols-2">
+        <div className="grid grid-cols-2 gap-6">
           {/* Pedro Dias */}
           <Card
             nome="Pedro Dias"
-            descricao="Sou estudante de Engenharia Informatica de Computadores no Tagus. Tenho 20 anos e sou natural de Lisboa."
+            descricao="Sou estudante de Engenharia Informática de Computadores no Tagus. Tenho 20 anos e sou natural de Lisboa."
             link="/PedroDias"
           />
 
@@ -43,7 +58,7 @@ export default function Home() {
             descricao="Sou o Miguel, tenho 18 anos, sou de Portimão e estou no primeiro ano em Engenharia Informática e de Computadores no Tagus."
             link="/Miguel"
           />
-          </div>
+        </div>
       </section>
 
     </main>

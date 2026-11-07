@@ -33,7 +33,7 @@ export default function Miguel() {
             Hobbies e interesses
           </h2>
           <p className="mt-3">
-            Gosto de tecnologia e inovação, música, aprender novas coisas, convívio e exploração de mota.
+            Gosto de tecnologia e inovação, música, aprender novas coisas, convívio e passeios de mota.
           </p>
         </section>
 
