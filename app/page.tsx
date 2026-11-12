@@ -20,7 +20,7 @@ export default function Home() {
 
         {/* Conteúdo por cima da imagem */}
         <div className="relative z-10">
-          <h2 className="text-4xl font-bold md:text-6xl">
+          <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold">
             Conhece a nossa
             <span className="text-blue-400"> Equipa.</span>
           </h2>
@@ -44,19 +44,19 @@ export default function Home() {
           Os nossos membros
         </h2>
 
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Pedro Dias */}
           <Card
             nome="Pedro Dias"
             descricao="Sou estudante de Engenharia Informática de Computadores no Tagus. Tenho 20 anos e sou natural de Lisboa."
-            link="/PedroDias"
+            link="/membros/pedro"
           />
 
           {/* Miguel */}
           <Card
             nome="Miguel"
             descricao="Sou o Miguel, tenho 18 anos, sou de Portimão e estou no primeiro ano em Engenharia Informática e de Computadores no Tagus."
-            link="/Miguel"
+            link="/membros/miguel"
           />
         </div>
       </section>

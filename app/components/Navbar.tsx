@@ -24,11 +24,11 @@ export default function Navbar() {
             Início
           </Link>
 
-          <Link href="/PedroDias" className="hover:text-blue-400">
+          <Link href="/membros/pedro" className="hover:text-blue-400">
             Pedro
           </Link>
 
-          <Link href="/Miguel" className="hover:text-blue-400">
+          <Link href="/membros/miguel" className="hover:text-blue-400">
             Miguel
           </Link>
         </div>
