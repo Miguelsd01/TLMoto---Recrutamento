@@ -1,5 +1,8 @@
 import Image from "next/image";
 import Card from "./components/card";
+import { membros } from "./data/membros";
+
+const ordemMembros = ["pedro", "miguel"] as const;
 
 export default function Home() {
   return (
@@ -45,21 +48,19 @@ export default function Home() {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {/* Pedro Dias */}
-          <Card
-            nome="Pedro Dias"
-            descricao="Sou estudante de Engenharia Informática de Computadores no Tagus. Tenho 20 anos e sou natural de Lisboa."
-            link="/membros/pedro"
-            imagem="/pedro.jpg"
-          />
+          {ordemMembros.map((id) => {
+            const pessoa = membros[id];
 
-          {/* Miguel */}
-          <Card
-            nome="Miguel"
-            descricao="Sou o Miguel, tenho 18 anos, sou de Portimão e estou no primeiro ano em Engenharia Informática e de Computadores no Tagus."
-            link="/membros/miguel"
-            imagem="/miguel.jpg"
-          />
+            return (
+              <Card
+                key={id}
+                nome={pessoa.nome}
+                descricao={pessoa.sobre}
+                link={`/membros/${id}`}
+                imagem={pessoa.imagem}
+              />
+            );
+          })}
         </div>
       </section>
 

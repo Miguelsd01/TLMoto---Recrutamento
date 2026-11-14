@@ -4,7 +4,7 @@ export const membros = {
     nome: "Miguel",
     imagem: "/miguel.jpg",
     sobre:
-      "Tenho 18 anos, sou de Portimão e estou no primeiro ano em Engenharia Informática e de Computadores no Tagus.",
+      "Sou de Portimão, tenho 18 anos e estou no primeiro ano em Engenharia Informática e de Computadores no Tagus.",
     hobbies:
       "Gosto de tecnologia e inovação, música, aprender novas coisas, convívio e passeios de mota.",
     projetos: [
